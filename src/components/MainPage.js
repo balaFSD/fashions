@@ -1,17 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
 import logo2 from '../logo2.svg';
 
 export default function MainPage (){
     return (
         <div className='content '>
         <header className='masthead'>
-            <div className='container'>
+            <div>
                 {/* <div className='masthead-subheading'>Welcome to</div> */}
                 <div className='masthead-heading text-uppercase'>WHITEAGLE FASHION ACCESSORIES</div>
             </div>
         </header>
-        <section className=' container col-10 mx-auto col-lg-2 set-bg' style={{backgroundImage:`url{"logo.png"}`}}>
+        <section className=' col-10 mx-auto col-lg-2 set-bg'>
             <img className='img' src={logo2} alt='images'/>
         </section>
         <div className='container'>
@@ -25,16 +24,5 @@ export default function MainPage (){
     );
 }
 
-// const pageWrapper = styled.div`
-// .center {
-//     height: 100%;
-//     margin:auto;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-image: logo.png;
-//     background-color: lightblue;
-//   }
-// `;
 
 

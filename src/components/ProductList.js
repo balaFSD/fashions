@@ -7,7 +7,7 @@ import {ProductConsumer} from '../context';
 class ProductList extends React.Component{
     state={product: storeProducts}
     render(){
-        console.log(this.state.product);
+        // console.log(this.state.product);
         return (
         <div className='py-5'>
             <div className='container'>
