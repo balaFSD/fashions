@@ -7,15 +7,20 @@ import {ButtonContainer} from './Button';
 class NavBar extends React.Component{
     render(){
         return (
-            <NavWrapper className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
+            <NavWrapper className="navbar navbar-expand-lg bg-primary navbar-dark px-sm-5 ui menu ">
                 {/* https://www.iconfinder.com/iconsets/harry-potter-solid-collection */}
                 <Link to='/'>
                     <img  src={logo1} alt='store' className="navbar-brand"/>
                 </Link>
-                <ul className='navbar-nav align-items-center'>
-                    <li className="nav-item ml-5 ">
+                <ul className='navbar-nav align-items-center ml-5'>
+                <li className="item ">
                         <Link to='/' className="nav-link ">
-                            <ButtonContainer>Product</ButtonContainer>
+                            Home
+                        </Link>
+                    </li>
+                    <li className="item ">
+                        <Link to='/product' className="nav-link ">
+                            Product
                         </Link>
                     </li>
                 </ul>
@@ -24,7 +29,7 @@ class NavBar extends React.Component{
                        <span className='mr-2'>
                        <i className="shopping cart icon"></i>
                        </span>
-                       my cart
+                        my cart
                        </ButtonContainer>
                 </Link>
             </NavWrapper>

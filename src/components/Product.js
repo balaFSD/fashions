@@ -12,7 +12,7 @@ class Product extends React.Component{
             <div className='card'>
                 <ProductConsumer>
                     {value => (
-                        <div className='img-container p-10' onClick={() => value.handleDetail(id)}>
+                        <div className='img-container p-2 ' onClick={() => value.handleDetail(id)}>
                         <Link to='/details'>
                         <img src={img} alt='product' className='card-img-top'/>
                         </Link>

@@ -9,6 +9,7 @@ import Details from './components/Details';
 import Default from './components/Default';
 import Cart from './components/Cart/Cart';
 import Modal from './components/Modal';
+import MainPage from './components/MainPage';
 
 class App extends React.Component{
   render(){
@@ -16,7 +17,8 @@ class App extends React.Component{
       <React.Fragment>
         <NavBar/>
         <Switch>
-          <Route exact path='/' component={ProductList}/>
+          <Route exact path='/' component={MainPage} />
+          <Route path='/product' component={ProductList}/>
           <Route path='/Cart' component={Cart}/>
           <Route path='/details' component={Details}/>
           <Route component={Default}/>
